@@ -118,6 +118,7 @@ pagination.on('afterMove', (event) => {
   console.log(currentPage);
 });
 
+
 // async function servicesCountry() {
 //     const resp = await fetch('https://restcountries.com/v3.1/name/Ukraine')
 //     console.log(resp);
