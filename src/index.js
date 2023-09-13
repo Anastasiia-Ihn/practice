@@ -129,3 +129,71 @@ pagination.on('afterMove', (event) => {
 //     const data = await resp.json()
 // }
 // servicesCountry()
+
+// function reverseString(str) {
+//     const a = str.split('').reverse().join('');
+//     console.log(a);
+//   return a;
+// }
+
+// reverseString("hello");
+
+// function findLongestWordLength(str) {
+//     const arrWords = str.split(' ');
+//     let longWord=0;
+
+//     for (let i = 0; i < arrWords.length; i += 1) {
+//         if (arrWords[i].length > longWord) {
+//             longWord = arrWords[i].length;
+        
+      
+//         }
+
+//     }return longWord
+// }
+
+// findLongestWordLength("The quick brown fox jumped over the lazy dog");
+
+// function largestOfFour(arr) {
+//     let results = [];
+// for (let i = 0; i < arr.length; i++) {
+//     const largestNumber = arr[i][0];
+//     for (let j = 1; j < arr[i].length; j++) {
+//        if (arr[i][j] > largestNumber) {
+//         largestNumber = arr[i][j];
+        
+//     }
+    
+// }results[i] = largestNumber;
+//   }
+
+//   return results;
+// }
+
+// largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+
+// function repeatStringNumTimes(str, num) {
+//     let newStr = '';
+//     if (num <= 0) {
+//         return
+//     } else {
+//         for (let i = 1; i <= num; i += 1) {
+//              newStr+=str
+//         }
+
+//     } return newStr
+// }
+
+// repeatStringNumTimes("abc", 3);
+
+function truncateString(str, num) {
+let newStr='';
+    if (str.length > num) {
+       
+        newStr = str.slice(num - 1).concat('...')
+        console.log(newStr);
+  }
+  return newStr;
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", 8);
